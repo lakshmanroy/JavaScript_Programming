@@ -25,16 +25,39 @@ const result= {target,sourse}
 // console.log(result);
 
 const obj= {...target,...sourse}
-console.log(obj);
+// console.log(obj);
 
-console.log(list);
+// console.log(list);
 
-console.log(Object.keys(list));
-console.log(Object.values(list));
-console.log(Object.entries(list));
+// console.log(Object.keys(list));
+// console.log(Object.values(list));
+// console.log(Object.entries(list));
 
-console.log(list.hasOwnProperty('isLoggedIn'));
+// console.log(list.hasOwnProperty('isLoggedIn'));
 
+const course= {
+     coursename : "js in hindi",
+     price: "9999",
+     surname: "Lakshman"
+}
+
+const {surname : Instructor}=course
+
+console.log(Instructor);
+
+// {
+//      "name": "Lakshman",
+//      "course" :"js in hindi",
+//      "prices": "hindi"
+// }
+
+
+[
+
+     {},
+     {},
+     {}
+]
 
 
 
