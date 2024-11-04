@@ -8,12 +8,7 @@ if(true){
   
 }
 
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    
-}
-
-console.log(a);
+// console.log(a);
 // console.log(b);
 // console.log(c);
 
