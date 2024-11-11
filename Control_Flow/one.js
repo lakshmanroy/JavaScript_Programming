@@ -12,9 +12,25 @@ const age=18;
 
 //************************* */
 
-const score=200;
-if(score>100){
-    var power ="fly";
-    console.log(`user score: ${power}`); 
+// const score=200;
+// if(score>100){
+//     var power ="fly";
+//     console.log(`user score: ${power}`); 
+// }
+// // console.log(`user power ${power}`);
+
+//*************************** */
+const balance=1000;
+
+if(balance<500){
+    console.log("less than 500");  
 }
-console.log(`user power ${power}`);
+else if(balance<750){
+    console.log("less than 750");   
+}
+else if(balance<900){
+    console.log("less than 900"); 
+}
+else{
+    console.log("less than 1200");
+}
