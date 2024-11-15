@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai and code | Dom</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="name">
+        <li>javaScript</li>
+    </ul>
+</body>
+<script>
+    function addName(name){
+     const li= document.createElement('li');
+      li.innerHTML= `${name}`
+      document.querySelector('.name').appendChild(li)
+
+    }
+    addName("Rohit")
+</script>
+</html>
