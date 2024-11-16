@@ -3,20 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chai and code | Dom</title>
+    <title>Chai and Code | DOM</title>
 </head>
 <body style="background-color: black; color: white;">
     <ul class="name">
-        <li>javaScript</li>
+        <li>JavaScript</li>
     </ul>
 </body>
 <script>
-    function addName(name){
-     const li= document.createElement('li');
-      li.innerHTML= `${name}`
-      document.querySelector('.name').appendChild(li)
-
+    // Function to add a new name to the list
+    function addName(name) {
+        const li = document.createElement('li'); // Create a new <li> element
+        li.textContent = name; // Set its text content
+        document.querySelector('.name').appendChild(li); // Append it to the list
     }
-    addName("Rohit")
+
+    // Adding names
+    addName("Rohit");
+    addName("Sumit");
+
+    // Corrected addOptLanguage function
+    function addOptLanguage(langName) {
+        const li = document.createElement('li');
+        li.textContent = langName;
+        document.querySelector('.name').appendChild(li);
+    }
+
+    // Adding more names
+    addOptLanguage("Mohit");
+    addOptLanguage("Virat Kohli");
+
+    // Edit: Replacing the second language with a new one
+    const secondLang = document.querySelector("li:nth-child(2)");
+    if (secondLang) {
+        const newLi = document.createElement('li');
+        newLi.textContent = "Rohit Sharma";
+        secondLang.replaceWith(newLi);
+    }
+
+    // Edit: Replace the first language with a new one
+    const firstLang = document.querySelector("li:first-child");
+    if (firstLang) {
+        firstLang.outerHTML = '<li>TypeScript</li>';
+    }
+
+    // Remove the last language
+    const lastLang = document.querySelector("li:last-child");
+    if (lastLang) {
+        lastLang.remove();
+    }
 </script>
 </html>
