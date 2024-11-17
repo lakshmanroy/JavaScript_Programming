@@ -34,4 +34,25 @@ bottons.forEach(function (botton) {
       body.style.backgroundColor = e.target.id;
     }
   });
+
+  
 });
+
+  ## project 3 solution code
+
+ ```javaScript
+ const clock=document.getElementById('clock')
+// const clock=document.querySelector('clock')
+
+let date=new Date();
+console.log(date.toLocaleDateString());
+
+setInterval(function(){
+  let date=new Date();
+  // console.log(date.toLocaleDateString());
+  clock.innerHTML=date.toLocaleDateString();
+},1000)
+
+  
+
+
